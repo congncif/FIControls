@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Normal field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7b-K3-AFN" customClass="FIBorderTextField">
+                                <rect key="frame" x="178" y="65" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J2M-l3-emQ"/>
+                                    <constraint firstAttribute="width" constant="244" id="U0P-a9-hcT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.83921568629999999" green="0.87843137250000003" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bordeRoundRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Info field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYe-Ut-fmx" customClass="FIBorderTextField">
+                                <rect key="frame" x="178" y="114" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E6q-iA-bVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.83921568629999999" green="0.87843137250000003" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bordeRoundRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Option field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jP-GJ-Ywl" customClass="FIBorderTextField">
+                                <rect key="frame" x="178" y="160" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IYf-MD-ne5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.83921568629999999" green="0.87843137250000003" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bordeRoundRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mua-4E-IFz" customClass="FISegmentSlider">
+                                <rect key="frame" x="155" y="205" width="291" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EWl-dC-EV4"/>
+                                    <constraint firstAttribute="width" constant="291" id="o6G-fO-OtS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bordeRoundRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lowColor">
+                                        <color key="value" red="0.78431372549019607" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mediumColor">
+                                        <color key="value" red="0.96862745098039216" green="0.55294117647058827" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highColor">
+                                        <color key="value" red="0.23529411764705882" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrx-WW-J91" customClass="FISegmentSlider">
+                                <rect key="frame" x="164" y="244" width="273" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="boj-sQ-svB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QYe-Ut-fmx" firstAttribute="leading" secondItem="I7b-K3-AFN" secondAttribute="leading" id="1JM-Ir-64K"/>
+                            <constraint firstItem="Jrx-WW-J91" firstAttribute="trailing" secondItem="Mua-4E-IFz" secondAttribute="trailing" constant="-9" id="4Gy-gP-ZNh"/>
+                            <constraint firstItem="Mua-4E-IFz" firstAttribute="top" secondItem="0jP-GJ-Ywl" secondAttribute="bottom" constant="15" id="7LQ-sl-HvM"/>
+                            <constraint firstItem="I7b-K3-AFN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="F2O-3T-W7l"/>
+                            <constraint firstItem="QYe-Ut-fmx" firstAttribute="trailing" secondItem="0jP-GJ-Ywl" secondAttribute="trailing" id="FeM-Le-LO7"/>
+                            <constraint firstItem="0jP-GJ-Ywl" firstAttribute="centerX" secondItem="Mua-4E-IFz" secondAttribute="centerX" id="Ltg-zU-Xv5"/>
+                            <constraint firstItem="Mua-4E-IFz" firstAttribute="leading" secondItem="Jrx-WW-J91" secondAttribute="leading" constant="-9" id="N9z-4f-hUd"/>
+                            <constraint firstItem="I7b-K3-AFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYN-sY-9hW"/>
+                            <constraint firstItem="Jrx-WW-J91" firstAttribute="top" secondItem="Mua-4E-IFz" secondAttribute="bottom" constant="14" id="Yo5-Y0-Efn"/>
+                            <constraint firstItem="QYe-Ut-fmx" firstAttribute="trailing" secondItem="I7b-K3-AFN" secondAttribute="trailing" id="mvc-Aj-5bQ"/>
+                            <constraint firstItem="0jP-GJ-Ywl" firstAttribute="leading" secondItem="QYe-Ut-fmx" secondAttribute="leading" id="oN1-eQ-FpG"/>
+                            <constraint firstItem="QYe-Ut-fmx" firstAttribute="top" secondItem="I7b-K3-AFN" secondAttribute="bottom" constant="19" id="oxq-C0-niA"/>
+                            <constraint firstItem="0jP-GJ-Ywl" firstAttribute="top" secondItem="QYe-Ut-fmx" secondAttribute="bottom" constant="16" id="zE9-11-ZWp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider1" destination="Mua-4E-IFz" id="jmo-P5-nCb"/>
+                        <outlet property="slider2" destination="Jrx-WW-J91" id="TSg-SR-t8Z"/>
+                        <outlet property="txtCustom" destination="I7b-K3-AFN" id="boj-Da-BAv"/>
+                        <outlet property="txtCustom1" destination="QYe-Ut-fmx" id="Uy8-Bg-Rew"/>
+                        <outlet property="txtCustom2" destination="0jP-GJ-Ywl" id="J1J-xb-r6k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
