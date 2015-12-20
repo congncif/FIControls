@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3951ADE7A0B8533759D617D3C0BE41CB7C0E16B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3951ADE7A0B8533759D617D3C0BE41CB7C0E16B0" : 0,
+    "BC99F5DCA023C15A66BC5D902AB2D6E541884697" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "69AA99AD-5931-4F10-A68E-9072D2B2FE35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3951ADE7A0B8533759D617D3C0BE41CB7C0E16B0" : "FIControls\/",
+    "BC99F5DCA023C15A66BC5D902AB2D6E541884697" : "if-examples"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CustomControls",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CustomControls\/CustomControls.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/congncif\/FIControls.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3951ADE7A0B8533759D617D3C0BE41CB7C0E16B0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/ifsolution\/if-examples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC99F5DCA023C15A66BC5D902AB2D6E541884697"
+    }
+  ]
+}

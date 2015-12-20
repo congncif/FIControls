@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2081F9B41C26F668009424BA /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2081F9B31C26F668009424BA /* UIImage+TBTint.m */; };
 		9384248D1B5E370400110674 /* FISegmentSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9384248C1B5E370400110674 /* FISegmentSlider.m */; };
 		938424901B5E3B3F00110674 /* FISelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9384248F1B5E3B3F00110674 /* FISelectionButton.m */; };
 		93F79AE81B5BB318007B5AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F79AE71B5BB318007B5AA4 /* main.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2081F9B21C26F668009424BA /* UIImage+TBTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBTint.h"; sourceTree = "<group>"; };
+		2081F9B31C26F668009424BA /* UIImage+TBTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBTint.m"; sourceTree = "<group>"; };
 		9384248B1B5E370400110674 /* FISegmentSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISegmentSlider.h; sourceTree = "<group>"; };
 		9384248C1B5E370400110674 /* FISegmentSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISegmentSlider.m; sourceTree = "<group>"; };
 		9384248E1B5E3B3F00110674 /* FISelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISelectionButton.h; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 		93F79AE41B5BB318007B5AA4 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				2081F9B21C26F668009424BA /* UIImage+TBTint.h */,
+				2081F9B31C26F668009424BA /* UIImage+TBTint.m */,
 				93A5CA811B6789760088364D /* Controls */,
 				93F79AE91B5BB318007B5AA4 /* AppDelegate.h */,
 				93F79AEA1B5BB318007B5AA4 /* AppDelegate.m */,
@@ -260,6 +265,7 @@
 			files = (
 				93F79B0D1B5BB411007B5AA4 /* FIBorderTextField.m in Sources */,
 				93F79AEE1B5BB318007B5AA4 /* ViewController.m in Sources */,
+				2081F9B41C26F668009424BA /* UIImage+TBTint.m in Sources */,
 				93F79AEB1B5BB318007B5AA4 /* AppDelegate.m in Sources */,
 				93F79AE81B5BB318007B5AA4 /* main.m in Sources */,
 				9384248D1B5E370400110674 /* FISegmentSlider.m in Sources */,

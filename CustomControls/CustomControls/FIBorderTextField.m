@@ -7,6 +7,7 @@
 //
 
 #import "FIBorderTextField.h"
+#import "UIImage+TBTint.h"
 
 const NSInteger TAG_OVERLAY = 1010;
 
@@ -78,7 +79,7 @@ const NSInteger TAG_OVERLAY = 1010;
 	{
 		[self resetInteraction];
 
-		UIImage *image = [UIImage imageNamed:@"ic_info"];
+		UIImage *image = [[UIImage imageNamed:@"ic_info"] tintedImageWithColor:self.borderColor];
 		rightView = [UIButton buttonWithType:UIButtonTypeCustom];
 		rightView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
 		[rightView setImage:image forState:UIControlStateNormal];
@@ -91,19 +92,22 @@ const NSInteger TAG_OVERLAY = 1010;
 
 		_editable = NO;
 
-		UIImage *image = [UIImage imageNamed:@"ic_direction_down"];
+		UIImage *image = [[UIImage imageNamed:@"ic_direction_down"] tintedImageWithColor:self.borderColor];
 		rightView = [UIButton buttonWithType:UIButtonTypeCustom];
 		rightView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
 		[rightView setImage:image forState:UIControlStateNormal];
 
 		[rightView addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
-		UIButton *btOverlay = [UIButton buttonWithType:UIButtonTypeCustom];
-		btOverlay.tag = TAG_OVERLAY;
+        UIButton *btOverlay = (UIButton*)[self viewWithTag:TAG_OVERLAY];
+        if (!btOverlay) {
+            btOverlay = [UIButton buttonWithType:UIButtonTypeCustom];
+            btOverlay.tag = TAG_OVERLAY;
+            btOverlay.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+            [btOverlay addTarget:self action:@selector(optionRecognized:) forControlEvents:UIControlEventTouchUpInside];
+            [self addSubview:btOverlay];
+        }
 		btOverlay.frame = self.bounds;
-		[btOverlay addTarget:self action:@selector(optionRecognized:) forControlEvents:UIControlEventTouchUpInside];
-
-		[self addSubview:btOverlay];
 	}
 	break;
 
@@ -134,12 +138,12 @@ const NSInteger TAG_OVERLAY = 1010;
 #pragma mark - Refresh
 
 - (void)awakeFromNib {
-//	[self setNeedsDisplay];
+	[self setNeedsDisplay];
 }
 
 - (void)didMoveToSuperview {
 	[super didMoveToSuperview];
-	[self setNeedsDisplay];
+	[self refreshDisplay];
 }
 
 /**-----------------------------------------------------------------**/
@@ -147,32 +151,32 @@ const NSInteger TAG_OVERLAY = 1010;
 
 - (void)setBorderColor:(UIColor *)borderColor {
 	_borderColor = borderColor;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 - (void)setBordeRoundRadius:(CGFloat)bordeRoundRadius {
 	_bordeRoundRadius = bordeRoundRadius;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
 	_borderWidth = borderWidth;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 - (void)setLeftPadding:(CGFloat)leftPadding {
 	_leftPadding = leftPadding;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 -(void)setRightPadding:(CGFloat)rightPadding {
 	_rightPadding = rightPadding;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 - (void)setType:(NSInteger)type {
 	_type = type;
-	[self setNeedsDisplay];
+    [self refreshDisplay];
 }
 
 /**-----------------------------------------------------------------**/
